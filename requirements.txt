@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+astral
+skyfield
+pytz
+jplephem
+numpy
+sgp4
