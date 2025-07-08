@@ -6,3 +6,4 @@ pytz
 jplephem
 numpy
 sgp4
+jinja2
