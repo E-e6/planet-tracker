@@ -1,31 +1,36 @@
-# 🌌 Planet Tracker
+# 🌌 Planet Tracker – A FastAPI App for Stargazers
 
-Planet Tracker is a FastAPI web app that shows real-time visibility of planets from Perth, Australia, including sunrise and sunset times.
+**Planet Tracker** is a lightweight FastAPI-based web application that lets users check which planets are visible from Perth, Australia, at 8 PM local time. It calculates real-time planetary positions using NASA's DE421 ephemeris and Skyfield, and displays sunrise/sunset times using Astral.
+
+---
 
 ## 🚀 Features
 
-- 🌅 Sunrise & Sunset for today  
-- 🔭 Visible planets at 8 PM local time  
-- 📍 Location: Perth, Australia  
-- 🧠 Powered by [Skyfield](https://rhodesmill.org/skyfield/), [Astral](https://astral.readthedocs.io/), and FastAPI  
+- 🪐 See which planets (Mercury, Venus, Mars, Jupiter, Saturn) are visible right now
+- ☀️ Displays today's sunrise and sunset for Perth, WA
+- 🌐 Built with Python, FastAPI, and Skyfield
+- 📡 Backend-ready and deployable as a web app (Render, Railway, etc.)
 
-## 📦 Installation
+---
+
+## 📸 Demo
+
+> _Coming Soon_ – Add screenshots or a link to a live version here after deployment.
+
+---
+
+## 🧠 How It Works
+
+- Uses `astral` to get sun times
+- Uses `skyfield` to calculate planet visibility above the horizon
+- FastAPI displays the results at `http://localhost:8000`
+
+---
+
+## 🧪 Installation & Running Locally
+
+1. **Clone the repository**
 
 ```bash
-git clone https://github.com/E-e6/planet-tracker.git
+git clone https://github.com/YOUR-USERNAME/planet-tracker.git
 cd planet-tracker
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-Then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
-
-## 🛰 Deployment
-
-🚧 Coming soon: Will deploy to Render or Railway
-
-## 👩‍🚀 Author
-
-Made by [E-e6](https://github.com/E-e6)
