@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Planet Visibility Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 2em auto; }
+        h1 { color: #2a3b59; }
+        ul { padding-left: 1em; }
+        .planet { margin: 0.5em 0; }
+    </style>
+</head>
+<body>
+    <h1>Planet Visibility for Perth</h1>
+    <p><strong>Date:</strong> {{ date }}</p>
+    <p><strong>Sunrise:</strong> {{ sunrise }} &nbsp;&nbsp; <strong>Sunset:</strong> {{ sunset }}</p>
+    <h2>Visible Planets at 8 PM local time</h2>
+    {% if visible_planets %}
+        <ul>
+        {% for planet in visible_planets %}
+            <li class="planet">{{ planet.name }} at {{ planet.altitude }}° altitude</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No planets visible at this time.</p>
+    {% endif %}
+</body>
+</html>
