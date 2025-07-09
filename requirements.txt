@@ -1,9 +1,3 @@
 fastapi
 uvicorn
-astral
-skyfield
-pytz
-jplephem
-numpy
-sgp4
 jinja2
